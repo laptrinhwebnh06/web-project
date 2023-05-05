@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body onload = 'main()'>
+    <div id='m'>
+      <audio id = 'audio' src = 'http://myinstants.com/media/sounds/correct.swf.mp3' type="audio/mpeg">
+    </audio>
+      <div id='time'></div>
+    <div id ='whenlose'>
+      <div id='scor'>
+      <p id='p1' ></p>
+      <p id='p2' ></p>
+      </div>
+      <div onclick='main(); reset();' id = 'lose'>try again </div>
+    </div>
+    <div id='nums'>
+   <div class='num' id='num1'></div>
+   <div class='num' id='num2'></div>
+   <div class='num' id='num3'></div>
+     </div>
+    <div id='buttons'>
+   <div class='b' id='b1'  onclick= 't()' >
+      <img id='img1' src = 'http://image.flaticon.com/icons/svg/226/226972.svg'/>
+      </div>
+   <div class='b' id='b2' onclick = 'f()' >
+       <img id='img2' src = 'http://image.flaticon.com/icons/svg/226/226971.svg'/>
+      </div>
+    </div>
+    </div>
+</body>
+    <script src="./js.js"></script>
+</html>

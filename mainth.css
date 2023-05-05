@@ -1,0 +1,148 @@
+*{
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 270px;
+    background-image:url('https://th.bing.com/th/id/OIP.7SCq4I_WYccLND-ysIkVJgEsBI?pid=ImgDet&rs=1');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.header_item{
+    margin-top: 80px;
+    list-style-type: none;
+    display: flex;
+    justify-content:space-around;
+    background-color:#fff;
+    width: 100%;
+    height: 100px;
+}
+.item_logo{
+   list-style-type: none;
+   padding: 20px;
+}
+.item_navbar{
+    list-style-type: none;
+    width:50% ;
+    display: flex;
+    justify-content: space-evenly;
+}
+.navbar a{
+     color: black;
+     text-align: center;
+     display: block;
+     text-decoration: none;
+     margin-top: 20px;
+     font-size: 20px;
+}
+.navbar a:hover{
+    color: green;
+}
+.menu{
+    width: 10%;
+    height: 1500px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    float: left;
+}
+.menu__item{
+    text-transform: uppercase;
+    text-align: center;
+    height: 50%;
+    line-height: 500px;
+}
+
+.menu__item:hover{
+    background-color: aliceblue;
+    opacity: 0.5;
+}
+
+.menu__item a {
+    text-decoration: none;
+    color: black;
+}
+.content{
+    width: 90%;
+    height: 1500px;
+
+    float: left;
+    border-bottom: 1px solid black;
+}
+.content_header{
+    height: 70%;
+    border-bottom: 1px solid black;
+    padding: 70px ;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.content_header img{
+    display: block;
+    margin: 0 auto;
+}
+
+.content_header .img-desc{
+    font-style: italic;
+    text-align: center;
+}
+.content_main{
+    height: 30%;
+}
+
+.content_main1{
+    padding: 20px 20px;
+    width: 50%; 
+    height: 100%;
+    border-right: 1px solid black;
+    float: left;
+    display: flex;
+    cursor: pointer;
+}
+
+.item-img{
+    width: 60%;
+    height: 100%;
+    background-image: url('https://i1-vnexpress.vnecdn.net/2022/08/12/afp-com-20190225-ph-gty-112718-4377-7800-1660272613.jpg?w=180&h=108&q=100&dpr=1&fit=crop&s=wSi41pmU1Ljr_x8shq6h1w');
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+.main2 .item-img{
+    background-image: url('https://i1-thethao.vnecdn.net/2023/03/20/Untitled-3812-1679306364.jpg?w=180&h=108&q=100&dpr=1&fit=crop&s=W1Q8Gl0T4tRkZTo-ILDrJQ');
+}
+
+.main3 .item-img{
+    background-image: url('https://i1-thethao.vnecdn.net/2023/03/20/NewProject51-1679284723-7529-1679284791.jpg?w=180&h=108&q=100&dpr=1&fit=crop&s=xcv7enTUR5ozXPMVYhsxUQ')
+}
+
+.item-text{
+    width: 40%;
+    height: 100%;
+}
+.footer{
+    float: left;
+    width: 100%;
+    height: 100px;
+}
+.footer_item{
+    display:flex;
+    width: 100%;
+    height: 100%;
+}
+.first{
+    width: 25%;
+}
+.second{
+    width: 45%;
+}
+.third{
+    width: 30%;
+
+}

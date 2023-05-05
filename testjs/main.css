@@ -1,0 +1,25 @@
+
+h1{
+    width: 30%;
+    text-align: center;
+}
+form{
+    display: flex;
+    width: 70%;
+}
+
+.div-label{
+    display: flex;
+    flex-direction: column;
+}
+.div-label label{
+    margin: 6px 10px;
+}
+
+.div-input{
+    display: flex;
+    flex-direction: column;
+}
+.div-input input{
+    margin: 5px 15px;
+}

@@ -1,0 +1,19 @@
+#myForm{
+    
+    display: block;
+    padding: 10px;
+    position: relative;
+    left: 40%;
+    width: 400px;
+    height: 300px;
+    border: 1px solid;
+}
+
+.input{
+    display: block;
+    text-align: center;
+}
+
+.span{
+    color: red;
+}

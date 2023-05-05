@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web\css\all.min.css">
+</head>
+<body>
+    <form action="">
+        <label for="name">Nhập tên</label>
+        <input type="text" name="name" id="name" onblur="Checkname()">
+        <br>
+        <span id="errorname" class="span"></span>
+        <br>
+        <label for="pass">Nhập mật khẩu</label>
+        <input type="password" name="pass" id="pass" onblur="Checkpass()">
+        <br>
+        <span id="errorpass" class="span"></span>
+        <br>
+        <label for="phone">Nhập số điện thoại</label>
+        <input type="text" name="phone" id="phone"  >
+        <br>
+        <span id="errorphone" class="span"></span>
+        <br>
+        <label for="email">Nhập email</label>
+        <input type="email" name="email" id="email" onblur="Checkemail()">
+        <br>
+        <span id="erroremail" class="span"></span>
+        <br>
+        <button type="button" id="submit"onclick="Submit()"> Đăng ký</button>
+    </form>
+      <script src="form.js">
+      </script>
+      
+</body>
+</html>

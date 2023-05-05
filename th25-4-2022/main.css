@@ -1,0 +1,246 @@
+.body{
+    width: 100%;
+    background-color: aqua;
+    height: 600px;
+}
+/*body*/
+.item-header{
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .item-border{
+    position: relative;
+  }
+  .item-list__img{
+  
+    position: relative;
+    display: block;
+    background-color: var(--white-color);
+    border-radius: 3px;
+    box-shadow: 6px 0 5px 0 rgba(0,0,0, 0.6);
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  .item-list__img--display{
+    display: block;
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    will-change: display;
+    animation: hidden linear 1s;
+  }
+  
+  @keyframes hidden{
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  
+  @keyframes disappear{
+    from{
+        opacity: 0;
+        transform: scale(1);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+  }
+  .item-list__img--hidden{
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: disappear linear 0.8s;
+    display: none;
+  }
+  
+  .item-list__img:hover .item-list__img--display{
+    
+    display: none;
+  }
+  
+  .item-list__img:hover .item-list__img--hidden{
+    display: block;
+  }
+  
+  .item-list__img--option{
+    position: absolute;
+    top:220px;
+    right:210px;
+    display: none;
+    animation: zoom ease-out 0.5s;
+    will-change: opacity,transform;
+  }
+  
+  @keyframes zoom{
+    from{
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to{
+        opacity: 1;
+        transform: scaleX(1);
+    }
+  }
+  .item-list__img--option-list{
+    display: flex;
+    position: absolute;
+    list-style: none;
+    padding-left: 0;
+    
+  }
+  
+  .item-list__img--option-item{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-list__img--option-link{
+    width: 100%;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 1.4rem;
+    padding: 10px;
+  }
+  .item-list__img--option-link:hover{
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+  
+  .item-border:hover .item-list__img--option{
+    display: block;
+  }
+  
+  .item-list__img--outstand{
+    position: absolute;
+    top:30px;
+    left:  -6px;
+    color: var(--white-color);
+    background-color: #f53e2d;
+    padding: 5px 10px;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+  }
+  
+  .item-list__img--outstand::before{
+    content: "";
+    position: absolute;
+    border-top: 10px solid   #f53e2d;
+    border-left:10px solid  transparent;
+    top: 29.5px;
+    left: 0;
+    filter:brightness(70%);
+    
+  
+  }
+  
+  .item-list__description{
+    margin-top: 10px ;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin-bottom: 10px;
+  }
+  
+  .item-list__description-title{
+    text-decoration: none;
+    color: var(--black-color);
+    position: relative;
+    transform: top translateY(1px) 0.1s;
+  }
+  
+  .item-list__description-title:hover{
+    color:#f53e2d ;
+    top:-2px;
+  }
+  
+  .item-list__price{
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 1px;
+  }
+  
+  .item-list__price-num{
+    color: #f53e2d;
+  }
+
+  
+  :root{
+    --text-color:#333;
+    --white-color:#fff;
+    --black-color:#000;
+    --main-color:#f6f6f6;
+  }
+  *{
+    box-sizing: inherit;
+  }
+  html{
+    font-family:"Helvetica", sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+    background-color: var(--main-color);
+  }
+  
+  .item-footer{
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .item-footer__btn{
+    border: none;
+    font-size: 1.7rem;
+    background-color: var(--black-color);
+    color: var(--white-color);
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color ease 0.5s;
+    will-change: background-color;
+  }
+  
+  .item-footer__btn:hover{
+    background-color: #009156;
+  }
+  
+  /* grid */
+  
+  .grid{
+    width: 1850px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .grid__full--width{
+    width: 100%;
+  }
+  
+  .grid__row{
+    display: flex;
+    align-items: center;
+    margin: 0 -5px;
+    flex-wrap: wrap;
+  }
+  
+  
+  .grid__column-4{
+    margin: 5px;
+    width: 21%;
+  }
+  .cart{
+    font-size: 20px;
+  }
+  button{
+    border: 0px solid ;
+    background-color: aqua;
+  }

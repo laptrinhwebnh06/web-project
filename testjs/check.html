@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form id = 'my-form'>
+        <div class="div-label">
+            <label for="name">Name:</label>
+            <label for="phone">Phone:</label>
+            <label for="email">Email:</label>
+            <label for="password">Password:</label>
+            <label for="re-password">Re-enter Password:</label>
+        </div>
+        <div class="div-input">   
+            <input type="text" id="name" required>
+            <input type="tel" id="phone" required>
+            <input type="email" id="email" required>
+            <input type="password" id="password" required>
+            <input type="password" id="re-password" required>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        const form = document.querySelector('#my-form')
+        form.addEventListener('submit', ()=>{
+            var name = document.querySelector('#name').value
+            var phone = document.querySelector('#phone').value
+            var email = document.querySelector('#email').value
+            var password = document.querySelector('#password').value
+            var rePassword = document.querySelector('#re-password').value
+
+            let patternName = /[^a-z]/i
+            let patternNumber = /[^0-9]/
+
+            if (name.match(patternName) != null) {
+                alert('Nhập lại tên của bạn chỉ chứa kí tự từ a-z!')
+            }
+            else if (phone.length != 10 || phone.match(patternNumber) != null){
+                alert('Nhập lại số điện thoại đúng 10 chữ số!')
+            }
+            else if (password!= rePassword) {
+                alert('Mật khẩu không trùng khớp!')
+            }
+            else{
+                alert('Thành công!')
+            }
+        })
+    </script>
+</body>
+</html>
